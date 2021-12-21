@@ -5,7 +5,8 @@ import simple_token_abi from "./Contracts/simple_token_abi.json";
 import Interactions from "./Interactions";
 
 export default function Wallet() {
-  //Ganache address:
+  //Ganache address: Every time you want to develop this app, you have to re-deploy the contract in remix ganache,
+  //then modify the contractAddress of the newly created contract + simple_token_abi.json.
   const contractAddress = "0x453b10cee9520c9323E34636708f8ef2EBC76063";
 
   const [tokenName, setTokenName] = useState("Token");
